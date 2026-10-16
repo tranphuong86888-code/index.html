@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Ngày Phụ Nữ Việt Nam 20/10!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Charm&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="name-gate-screen" class="visible">
+        <div class="background-hearts"></div>
+        <div class="gate-content">
+            <h1 class="gate-title">Món Quà Dành Tặng Riêng Em</h1>
+            <p class="gate-subtitle">Nhưng trước hết, em hãy xác minh mình là em bé của anh nhaaa</p>
+            <form id="gate-form">
+                <input type="text" id="gate-name-input" placeholder="Xác minh tại đây" autocomplete="off" required>
+                <button type="submit">Tiếp tục</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="intro-screen" class="hidden">
+        <div class="background-hearts"></div>
+        <div id="above-card-message" class="hidden"></div>
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="flap"></div>
+                <div class="envelope-body"></div>
+                <div class="card">
+                    <div class="card-content-initial">
+                        <h2 id="card-title">Một món quà đặc biệt...</h2>
+                        <p id="card-subtitle">...dành riêng cho bạn. Vui lòng nhập câu thần chú để mở nhé:</p>
+                        <form id="name-form">
+                            <input type="text" id="name-input" placeholder="Nhập câu thần chú" autocomplete="off" required>
+                            <button type="submit">Mở quà</button>
+                        </form>
+                    </div>
+                    <div id="card-poem" class="hidden"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-content" class="hidden">
+        <div class="background-hearts"></div>
+        <header class="header">
+            <h1>Chúc Mừng Ngày Phụ Nữ Việt Nam 20/10</h1>
+            <p>Với anh, hôm nay không phải là ngày duy nhất để yêu thương và trân trọng em, mà chỉ là thêm một cơ hội để nói rằng: Cảm ơn em đã đến, mang theo cả thế giới dịu dàng và biến cuộc sống của anh trở nên trọn vẹn &hearts;</p>
+        </header>
+        <main class="photo-grid"></main>
+        <footer class="footer">
+            <p>Anh không cần gì lớn lao cả, chỉ cần sau mỗi ngày làm việc mệt mỏi đều có em ở bên cạnh để làm động lực cho anh. Mãi yêu em.&hearts;  &hearts;</p>
+        </footer>
+        <audio id="bg-music" loop><source src="nhac-nen.mp3" type="audio/mpeg"></audio>
+        <button id="toggle-music" class="music-button">🎵</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
